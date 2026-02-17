@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Александра Стукалова",
+      "email": "s.stukalova@example.com",
+      "password": "123456"
+    }
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "title": "Утренняя йога для начинающих",
+      "type": "Йога",
+      "level": "Начинающий",
+      "duration": 30,
+      "calories": 150,
+      "description": "Мягкая практика для пробуждения тела и ума.",
+      "image": "yoga.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Интенсивное кардио",
+      "type": "Кардио",
+      "level": "Средний",
+      "duration": 45,
+      "calories": 320,
+      "description": "Жиросжигающая тренировка с высоким темпом.",
+      "image": "cardio.jpg"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "5 простых ПП-завтраков",
+      "category": "Питание",
+      "readingTime": 15,
+      "image": "blog-breakfast.jpg"
+    }
+  ]
+}
