@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход</title>
+    <title>Вход | FitnessPlatform</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html">FitnessPlatform</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Главная</a>
+                <a class="nav-link active" href="login.html">Вход</a>
+                <a class="nav-link" href="register.html">Регистрация</a>
+                <a class="nav-link" href="profile.html">Личный кабинет</a>
+                <a class="nav-link" href="workouts.html">Тренировки</a>
+                <a class="nav-link" href="blog.html">Блог</a>
+            </div>
         </div>
     </nav>
 
@@ -21,26 +29,27 @@
                     <div class="card-body">
                         <h2 class="text-center mb-4">Вход</h2>
 
-                        <form>
+                        <form id="loginForm">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Введите email">
+                                <input type="email" class="form-control" id="email" placeholder="Введите email" required>
                             </div>
-
+                            
                             <div class="mb-3">
                                 <label for="password" class="form-label">Пароль</label>
-                                <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+                                <input type="password" class="form-control" id="password" placeholder="Введите пароль" required>
                             </div>
-
+                            
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="remember">
                                 <label class="form-check-label" for="remember">Запомнить меня</label>
                             </div>
-
-                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#welcomeModal">
-                                Войти
-                            </button>
+                            
+                            <button type="submit" class="btn btn-primary w-100">Войти</button>
                         </form>
+
+                        <!-- Контейнер для сообщений об ошибке/успехе -->
+                        <div id="loginMessage" class="mt-3"></div>
 
                         <div class="text-center mt-3">
                             <a href="register.html">Нет аккаунта? Зарегистрироваться</a>
@@ -51,17 +60,18 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="bg-white text-center py-3 mt-5 shadow-sm">
         <div class="container">
-            <p class="mb-0">© 2026 FitnessPlatform.</p>
+            <p class="mb-0 text-secondary">© 2025 FitnessPlatform.</p>
         </div>
     </footer>
 
+    <!-- Модальное окно -->
     <div class="modal fade" id="welcomeModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Добро пожаловать! </h5>
+                    <h5 class="modal-title">Добро пожаловать!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
