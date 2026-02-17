@@ -5,6 +5,12 @@
       "name": "Александра Стукалова",
       "email": "s.stukalova@example.com",
       "password": "123456"
+    },
+    {
+      "id": 1771368374853,
+      "name": "Александра Стукалова",
+      "email": "aleksandra.stuckalowa@yandex.ru",
+      "password": "123"
     }
   ],
   "workouts": [
@@ -35,7 +41,24 @@
       "title": "5 простых ПП-завтраков",
       "category": "Питание",
       "readingTime": 15,
-      "image": "blog-breakfast.jpg"
+      "image": "blog-breakfast.jpg",
+      "description": "Быстрые и полезные рецепты для идеального начала дня."
+    },
+    {
+      "id": 2,
+      "title": "Сколько воды нужно пить?",
+      "category": "Здоровье",
+      "readingTime": 5,
+      "image": "blog-water.jpg",
+      "description": "Разбираемся в нормах и мифах о водном балансе."
+    },
+    {
+      "id": 3,
+      "title": "Кардио для начинающих",
+      "category": "Тренировки",
+      "readingTime": 7,
+      "image": "blog-cardio.jpg",
+      "description": "Как начать бегать и не бросить через неделю."
     }
   ]
 }
