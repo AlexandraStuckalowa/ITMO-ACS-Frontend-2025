@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск тренировок</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FitnessPlatform</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="login.html">Вход</a>
+                <a class="nav-link" href="register.html">Регистрация</a>
+                <a class="nav-link" href="profile.html">Личный кабинет</a>
+                <a class="nav-link active" href="workouts.html">Тренировки</a>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container mt-4">
+        <h1 class="mb-4">Поиск тренировок</h1>
+        
+        <!-- Строка поиска -->
+        <div class="row mb-4">
+            <div class="col-md-8 mx-auto">
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Например: йога для начинающих">
+                    <button class="btn btn-primary" type="button">Найти</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Фильтры</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="mb-3">Тип тренировки</h6>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="type1" checked>
+                            <label class="form-check-label" for="type1">Кардио</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="type2" checked>
+                            <label class="form-check-label" for="type2">Силовая</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="type3" checked>
+                            <label class="form-check-label" for="type3">Йога</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="type4">
+                            <label class="form-check-label" for="type4">Пилатес</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="type5">
+                            <label class="form-check-label" for="type5">Функциональная</label>
+                        </div>
+
+
+                        <h6 class="mb-3">Уровень</h6>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="level" id="level1" checked>
+                            <label class="form-check-label" for="level1">Любой</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="level" id="level2">
+                            <label class="form-check-label" for="level2">Начинающий</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="level" id="level3">
+                            <label class="form-check-label" for="level3">Средний</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="radio" name="level" id="level4">
+                            <label class="form-check-label" for="level4">Продвинутый</label>
+                        </div>
+
+                      
+                        <h6 class="mb-3">Длительность</h6>
+                        <div class="mb-3">
+                            <label class="form-label">От (минут)</label>
+                            <input type="number" class="form-control" value="10" min="0" step="5">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">До (минут)</label>
+                            <input type="number" class="form-control" value="60" min="0" step="5">
+                        </div>
+
+                        <button class="btn btn-primary w-100">Применить фильтры</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Найдено: <strong>12 тренировок</strong></p>
+                    <div class="d-flex align-items-center">
+                        <label class="me-2">Сортировать:</label>
+                        <select class="form-select" style="width: auto;">
+                            <option>По популярности</option>
+                            <option>По длительности</option>
+                            <option>Сначала новые</option>
+                        </select>
+                    </div>
+                </div>
+
+              
+                <div class="row">
+                    <!-- Карточка 1: Йога -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/yoga.jpg" class="card-img-top" alt="Йога для начинающих">
+                            <div class="card-body">
+                                <h5 class="card-title">Утренняя йога для начинающих</h5>
+                                <p class="card-text">Мягкая практика для пробуждения тела и ума. Подходит для новичков.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Йога</span>
+                                    <span class="badge bg-success">Начинающий</span>
+                                    <span class="text-muted">30 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a href="workout-detail.html" class="btn btn-outline-primary w-100">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/cardio.jpg" class="card-img-top" alt="Интенсивное кардио">
+                            <div class="card-body">
+                                <h5 class="card-title">Интенсивное кардио</h5>
+                                <p class="card-text">Жиросжигающая тренировка с высоким темпом. Подготовь воду!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Кардио</span>
+                                    <span class="badge bg-warning text-dark">Средний</span>
+                                    <span class="text-muted">45 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a href="workout-detail.html" class="btn btn-outline-primary w-100">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/strength.jpg" class="card-img-top" alt="Силовая тренировка">
+                            <div class="card-body">
+                                <h5 class="card-title">Силовая на все тело</h5>
+                                <p class="card-text">Работаем с собственным весом и гантелями. Укрепляем мышцы.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Силовая</span>
+                                    <span class="badge bg-warning text-dark">Средний</span>
+                                    <span class="text-muted">50 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a href="workout-detail.html" class="btn btn-outline-primary w-100">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+
+ 
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/stretching.jpg" class="card-img-top" alt="Растяжка и гибкость">
+                            <div class="card-body">
+                                <h5 class="card-title">Растяжка для гибкости</h5>
+                                <p class="card-text">Улучшаем гибкость и снимаем напряжение после рабочего дня.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Пилатес</span>
+                                    <span class="badge bg-success">Начинающий</span>
+                                    <span class="text-muted">25 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a href="workout-detail.html" class="btn btn-outline-primary w-100">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Назад</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Вперед</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2025 FitnessPlatform.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
