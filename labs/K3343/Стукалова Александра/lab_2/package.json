@@ -1,0 +1,8 @@
+{
+  "name": "fitness-platform",
+  "version": "1.0.0",
+  "description": "Платформа для тренировок с JSON-server",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3000"
+  }
+}
