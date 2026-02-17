@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Утренняя йога</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FitnessPlatform</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="login.html">Вход</a>
+                <a class="nav-link" href="register.html">Регистрация</a>
+                <a class="nav-link" href="profile.html">Личный кабинет</a>
+                <a class="nav-link" href="workouts.html">Тренировки</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Навигационная цепочка -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="workouts.html">Тренировки</a></li>
+                <li class="breadcrumb-item"><a href="workouts.html">Йога</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Утренняя йога для начинающих</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <!-- Основной контент -->
+            <div class="col-md-8">
+                <!-- Видео или фото тренировки -->
+                <div class="card mb-4">
+                    <img src="images/yoga.jpg" class="card-img-top" alt="Утренняя йога">
+                    <div class="card-body">
+                        <h2 class="card-title">Утренняя йога для начинающих</h2>
+                        <div class="d-flex gap-3 mb-3">
+                            <span class="badge bg-primary">Йога</span>
+                            <span class="badge bg-success">Начинающий</span>
+                            <span class="text-muted">⏱ 30 мин</span>
+                        </div>
+                        <p class="card-text">Мягкая практика для пробуждения тела и ума. Этот урок поможет вам начать день с энергией и позитивом. Подходит для тех, кто только начинает знакомство с йогой.</p>
+                    </div>
+                </div>
+
+                <!-- Что понадобится -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0">Что понадобится</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">🧘‍♀️ Коврик для йоги</li>
+                            <li class="list-group-item">👕 Удобная одежда</li>
+                            <li class="list-group-item">💧 Бутылка воды</li>
+                            <li class="list-group-item">📱 Таймер (по желанию)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Пошаговая инструкция -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0">Программа тренировки</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="workoutSteps">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1">
+                                        Разминка (5 минут)
+                                    </button>
+                                </h2>
+                                <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#workoutSteps">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Круговые движения головой</li>
+                                            <li>Вращения плечами</li>
+                                            <li>Наклоны в стороны</li>
+                                            <li>Круговые движения тазом</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2">
+                                        Основная часть (20 минут)
+                                    </button>
+                                </h2>
+                                <div id="step2" class="accordion-collapse collapse" data-bs-parent="#workoutSteps">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Поза кошки-коровы</li>
+                                            <li>Собака мордой вниз</li>
+                                            <li>Поза ребенка</li>
+                                            <li>Треугольник</li>
+                                            <li>Поза воина</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step3">
+                                        Заминка (5 минут)
+                                    </button>
+                                </h2>
+                                <div id="step3" class="accordion-collapse collapse" data-bs-parent="#workoutSteps">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Скручивания</li>
+                                            <li>Поза бабочки</li>
+                                            <li>Шавасана</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отзывы -->
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Отзывы (3)</h5>
+                        <button class="btn btn-primary btn-sm">Оставить отзыв</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                                <strong>Елена</strong>
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <p class="mb-1">Отличная тренировка для начала дня! Очень мягкая и приятная.</p>
+                            <small class="text-muted">2 дня назад</small>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                                <strong>Дмитрий</strong>
+                                <span class="text-warning">★★★★☆</span>
+                            </div>
+                            <p class="mb-1">Хорошая разминка, но для начинающих самое то.</p>
+                            <small class="text-muted">5 дней назад</small>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <strong>Анна</strong>
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <p class="mb-1">Делаю каждое утро, очень довольна!</p>
+                            <small class="text-muted">1 неделю назад</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Боковая панель -->
+            <div class="col-md-4">
+                <!-- Информация о тренировке -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0">Информация</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Уровень:</span>
+                                <span class="badge bg-success">Начинающий</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Длительность:</span>
+                                <span>30 минут</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Калории:</span>
+                                <span>~150 ккал</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Тренер:</span>
+                                <span>Анна Иванова</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Кнопка начала -->
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <button class="btn btn-primary btn-lg w-100 mb-3">Начать тренировку</button>
+                        <button class="btn btn-outline-primary w-100">Добавить в план</button>
+                    </div>
+                </div>
+
+                <!-- Похожие тренировки -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Похожие тренировки</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <a href="#" class="text-decoration-none">
+                                <h6>Вечерняя йога</h6>
+                                <small class="text-muted">25 мин · Расслабление</small>
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <a href="#" class="text-decoration-none">
+                                <h6>Йога для спины</h6>
+                                <small class="text-muted">20 мин · Здоровье</small>
+                            </a>
+                        </div>
+                        <hr>
+                        <div>
+                            <a href="#" class="text-decoration-none">
+                                <h6>Дыхательная практика</h6>
+                                <small class="text-muted">15 мин · Пранаяма</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white text-center py-3 mt-5 shadow-sm">
+        <div class="container">
+            <p class="mb-0 text-secondary">© 2025 FitnessPlatform.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
