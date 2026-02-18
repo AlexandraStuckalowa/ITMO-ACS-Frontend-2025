@@ -326,3 +326,15 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #a58e7c;
     border-color: #a58e7c;
 }
+
+.dark-theme .btn-outline-primary {
+    background-color: transparent !important;
+    border-color: #a58e7c !important;
+    color: #a58e7c !important;
+}
+
+.dark-theme .btn-outline-primary:hover {
+    background-color: #a58e7c !important;
+    border-color: #a58e7c !important;
+    color: #2a2a2a !important;
+}
