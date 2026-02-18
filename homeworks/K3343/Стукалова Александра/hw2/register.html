@@ -75,12 +75,12 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Ура!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    <h5 class="modal-title" id="successModalTitle">Ура!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть" tabindex="0"></button>
                 </div>
                 <div class="modal-body">
                     <p>Регистрация прошла успешно!</p>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="modal-footer">
                     <a href="login.html" class="btn btn-primary">Перейти ко входу</a>
-                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" tabindex="0">Закрыть</button>
                 </div>
             </div>
         </div>
