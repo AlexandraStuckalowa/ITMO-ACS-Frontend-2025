@@ -338,3 +338,121 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #a58e7c !important;
     color: #2a2a2a !important;
 }
+
+/* ПОЛНОЕ ПЕРЕОПРЕДЕЛЕНИЕ ДЛЯ ТЁМНОЙ ТЕМЫ */
+.dark-theme {
+    /* Фоны */
+    --bg-card: #3d3d3d;
+    --bg-card-header: #2d2d2d;
+    --text-on-dark: #e0e0e0;
+    --text-muted-dark: #b0b0b0;
+    --border-dark: #4d4d4d;
+}
+
+/* Карточки */
+.dark-theme .card,
+.dark-theme .list-group-item,
+.dark-theme .card-header,
+.dark-theme .card-footer {
+    background-color: #3d3d3d !important;
+    border-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Текст в карточках */
+.dark-theme .card h1,
+.dark-theme .card h2,
+.dark-theme .card h3,
+.dark-theme .card h4,
+.dark-theme .card h5,
+.dark-theme .card h6,
+.dark-theme .card p,
+.dark-theme .card span,
+.dark-theme .card div:not(.btn):not(.badge) {
+    color: #e0e0e0 !important;
+}
+
+/* Второстепенный текст */
+.dark-theme .text-muted,
+.dark-theme .card .text-muted,
+.dark-theme small.text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Список групп (цели, планы тренировок) */
+.dark-theme .list-group-item {
+    background-color: #3d3d3d !important;
+    border-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-theme .list-group-item .badge {
+    background-color: #a58e7c !important;
+    color: #2a2a2a !important;
+}
+
+/* Заголовки карточек */
+.dark-theme .card-header {
+    background-color: #2d2d2d !important;
+    border-bottom-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Подвал карточек */
+.dark-theme .card-footer {
+    background-color: #2d2d2d !important;
+    border-top-color: #4d4d4d !important;
+}
+
+/* Таблицы */
+.dark-theme .table {
+    color: #e0e0e0 !important;
+    background-color: transparent;
+}
+
+.dark-theme .table td,
+.dark-theme .table th {
+    border-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-theme .table thead th {
+    background-color: #2d2d2d;
+    color: #e0e0e0 !important;
+}
+
+/* Статистика в личном кабинете */
+.dark-theme .stat-card {
+    background-color: #3d3d3d !important;
+    border-left-color: #a58e7c !important;
+}
+
+.dark-theme .stat-card h3,
+.dark-theme .stat-card h6 {
+    color: #e0e0e0 !important;
+}
+
+/* Карточка прогресса */
+.dark-theme .progress-card {
+    background: linear-gradient(135deg, #3d3d3d 0%, #2d2d2d 100%) !important;
+    border-color: #4d4d4d !important;
+}
+
+/* Badges */
+.dark-theme .badge.bg-success,
+.dark-theme .badge.bg-warning,
+.dark-theme .badge.bg-secondary {
+    background-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Кнопки "Редактировать профиль" */
+.dark-theme .btn-outline-primary {
+    border-color: #a58e7c !important;
+    color: #a58e7c !important;
+}
+
+.dark-theme .btn-outline-primary:hover {
+    background-color: #a58e7c !important;
+    color: #2a2a2a !important;
+}
